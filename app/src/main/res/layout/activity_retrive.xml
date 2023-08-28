@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RetriveActivity">
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/retrieveId"
+                android:layout_marginLeft="10dp"
+                android:layout_marginVertical="10dp"
+                android:text="ID\n"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/retrieveName"
+                android:layout_marginLeft="10dp"
+                android:layout_marginVertical="10dp"
+                android:text="Name\n"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/retrieveEmail"
+                android:layout_marginLeft="10dp"
+                android:layout_marginVertical="10dp"
+                android:text="Email\n"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/retrieveUsername"
+                android:layout_marginLeft="10dp"
+                android:layout_marginVertical="10dp"
+                android:text="Username\n"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/retrievePassword"
+                android:layout_marginLeft="10dp"
+                android:layout_marginVertical="10dp"
+                android:text="Password\n"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/retrieveContact"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="10dp"
+                android:text="Contact\n"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/viewData"
+            android:text="View Data"
+            android:layout_marginHorizontal="40dp"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/updateData"
+            android:layout_below="@+id/viewData"
+            android:text="Update Data"
+            android:layout_marginHorizontal="40dp"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/deleteData"
+            android:layout_below="@+id/updateData"
+            android:text="Delete Data"
+            android:layout_marginHorizontal="40dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/insertData"
+            android:text="Insert Data"
+            android:layout_below="@+id/deleteData"
+            android:layout_marginHorizontal="40dp"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
